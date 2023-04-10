@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "tutorialmod",
   "version": "${version}",
 
   "name": "Example Mod",
@@ -19,11 +19,12 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
-    ]
+      "net.pawel.tutorialmod.Tutorialmod"
+    ],
+    "client": ["net.pawel.tutorialmod.TutorialmodClient"]
   },
   "mixins": [
-    "modid.mixins.json"
+    "tutorialmod.mixins.json"
   ],
 
   "depends": {
